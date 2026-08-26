@@ -1,0 +1,17 @@
+{
+  "name": "Profile README Preview",
+  "install": "pip3 install --user --break-system-packages grip",
+  "terminals": [
+    {
+      "name": "readme-preview",
+      "command": "python3 -m grip README.md 0.0.0.0:6419",
+      "description": "GitHub-faithful live preview of README.md (grip). Open http://localhost:6419 to see how the profile renders on GitHub; edits to README.md refresh on reload."
+    }
+  ],
+  "ports": [
+    {
+      "name": "readme-preview",
+      "port": 6419
+    }
+  ]
+}
